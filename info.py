@@ -13,8 +13,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', "21145186"))
-API_HASH = environ.get('API_HASH', "daa53f4216112ad22b8a8f6299936a46")
+API_ID = int(environ.get('API_ID', ""))
+API_HASH = environ.get('API_HASH', "")
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 TIMEZONE = environ.get("TIMEZONE", "Asia/Kolkata")
 # Bot settings
@@ -45,8 +45,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'True')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://infohubstore06:PMTuMwpHX1nwsi5w@cluster1947.rcboi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1947")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster1947")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Pm files delete 
