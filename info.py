@@ -56,20 +56,20 @@ FILES_DELETE = is_enabled((environ.get('FILES_DELETE', 'True')), False)
 PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '').split()]
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'urlshortx.com'))
-STREAM_API = (environ.get('STREAM_API', '8afa8fbc218cc0791c62495f2c510c92524503ce'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'hypershort.com'))
+STREAM_API = (environ.get('STREAM_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hoghjhh'))
-STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "False")), False)
+STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "True")), True)
 
 # Others
-IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'False')), False)
+IS_VERIFY = is_enabled((environ.get('IS_VERIFY', 'True')), True)
 HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', "https://t.me/infohub_updates/34")
-VERIFY2_URL = environ.get('VERIFY2_URL', "ziplinker.net")
-VERIFY2_API = environ.get('VERIFY2_API', "e45148e36c775f7602b27f6036bcd96a750db1c8")
+VERIFY2_URL = environ.get('VERIFY2_URL', "hypershort.com")
+VERIFY2_API = environ.get('VERIFY2_API', "28cb820c966371de4aff06fc22d6a8a0bcf62b2c")
 
 # file Shortner urls
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'e45148e36c775f7602b27f6036bcd96a750db1c8')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'hypershort.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c')
 IS_SHORTLINK = is_enabled((environ.get('IS_SHORTLINK', 'False')), False)
 
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/infohub_updates/34')
@@ -103,7 +103,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 # Streaming
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002465123057")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002310300801")
 if len(BIN_CHANNEL) == 0:
     logging.error('BIN_CHANNEL is missing, exiting now')
     exit()
