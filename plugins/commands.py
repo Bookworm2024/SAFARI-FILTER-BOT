@@ -43,7 +43,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
+        m=await message.reply_sticker("CAACAgIAAxkBAAJ1YGbn_0DtATuwgGb1qSGhnkqDFOErAALLGQACSTqQSd8HMPXDlDTnNgQ") 
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(
@@ -80,14 +80,14 @@ async def start(client, message):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+        m=await message.reply_sticker("CAACAgIAAxkBAAJ1YGbn_0DtATuwgGb1qSGhnkqDFOErAALLGQACSTqQSd8HMPXDlDTnNgQ") 
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(
@@ -150,7 +150,7 @@ async def start(client, message):
             gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
             gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
-        m=await message.reply_sticker("CAACAgQAAxkBAAEKeqNlIpmeUoOEsEWOWEiPxPi3hH5q-QACbg8AAuHqsVDaMQeY6CcRojAE") 
+        m=await message.reply_sticker("CAACAgIAAxkBAAJ1YGbn_0DtATuwgGb1qSGhnkqDFOErAALLGQACSTqQSd8HMPXDlDTnNgQ") 
         await asyncio.sleep(2)
         await m.delete()
         await message.reply_photo(
