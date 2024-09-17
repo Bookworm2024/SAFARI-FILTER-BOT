@@ -36,13 +36,13 @@ async def start(client, message):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         m=await message.reply_sticker("CAACAgIAAxkBAAJ1YGbn_0DtATuwgGb1qSGhnkqDFOErAALLGQACSTqQSd8HMPXDlDTnNgQ") 
         await asyncio.sleep(2)
         await m.delete()
@@ -143,13 +143,13 @@ async def start(client, message):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         m=await message.reply_sticker("CAACAgIAAxkBAAJ1YGbn_0DtATuwgGb1qSGhnkqDFOErAALLGQACSTqQSd8HMPXDlDTnNgQ") 
         await asyncio.sleep(2)
         await m.delete()
@@ -432,7 +432,7 @@ async def start(client, message):
                         InlineKeyboardButton("⚠️ Hᴏᴡ Tᴏ Vᴇʀɪғʏ ⚠️", url=HOW_TO_VERIFY)
                         ]]
                 await message.reply_text(
-                    text="<b>Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ!\nKɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ Sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs ᴜɴᴛɪʟ 12 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ !</b>",
+                    text="<b>ʜᴇʏ ᴛʜᴇʀᴇ!!\n\nʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴅᴏɪɴɢ ɢʀᴇᴀᴛ! ᴛʜɪꜱ ᴡɪʟʟ ᴊᴜꜱᴛ ᴛᴀᴋᴇ 2 ᴍɪɴᴜᴛᴇꜱ ᴏꜰ ʏᴏᴜʀ ᴛɪᴍᴇ.\n\nᴛᴏ ᴋᴇᴇᴘ ᴏᴜʀ ꜱᴇʀᴠᴇʀꜱ ʀᴜɴɴɪɴɢ ꜱᴍᴏᴏᴛʜʟʏ ᴀɴᴅ ᴇɴʜᴀɴᴄᴇ ᴛʜᴇ ʙᴏᴛ’ꜱ ᴇꜰꜰɪᴄɪᴇɴᴄʏ, ᴡᴇ ʜᴀᴠᴇ ɪɴᴛʀᴏᴅᴜᴄᴇᴅ ᴀ ɴᴇᴡ <u>ᴛᴏᴋᴇɴ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ꜱʏꜱᴛᴇᴍ</u>.\n\nᴛʜɪꜱ ꜱʏꜱᴛᴇᴍ ᴇɴꜱᴜʀᴇꜱ ꜱᴍᴏᴏᴛʜ ᴀɴᴅ ᴜɴɪɴᴛᴇʀʀᴜᴘᴛᴇᴅ ꜱᴇʀᴠɪᴄᴇ, ʜᴇʟᴘɪɴɢ ᴜꜱ ᴍᴀɪɴᴛᴀɪɴ ᴛᴏᴘ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇ ᴀɴᴅ ᴅᴇʟɪᴠᴇʀ ᴛʜᴇ ʙᴇꜱᴛ ᴇxᴘᴇʀɪᴇɴᴄᴇ ᴡɪᴛʜ ᴍɪɴɪᴍᴀʟ ʙᴏᴛ ᴅᴏᴡɴᴛɪᴍᴇ!\n\nᴡᴇ ᴀᴘᴘʀᴇᴄɪᴀᴛᴇ ʏᴏᴜʀ ᴄᴏᴏᴘᴇʀᴀᴛɪᴏɴ ᴀɴᴅ ᴜɴᴅᴇʀꜱᴛᴀɴᴅɪɴɢ!\n\nᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴠᴇʀɪꜰʏ' ʙᴜᴛᴛᴏɴ ᴛᴏ ɪɴɪᴛɪᴀᴛᴇ ᴛʜᴇ ᴘʀᴏᴄᴇꜱꜱ.\n\nꜰᴏʀ ᴀꜱꜱɪꜱᴛᴀɴᴄᴇ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ' ʙᴜᴛᴛᴏɴ ꜰᴏʀ ᴀ ꜱᴛᴇᴘ-ʙʏ-ꜱᴛᴇᴘ ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴅᴀʏ.</b>",
                     protect_content=True if pre == 'filep' else False,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -472,7 +472,7 @@ async def start(client, message):
                     InlineKeyboardButton("💸 𝐑𝐞𝐦𝐨𝐯𝐞 𝐕𝐞𝐫𝐢𝐟𝐲 💸", callback_data='seeplans')
                 ]]
                 await message.reply_text(
-                    text="<b>Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ!\nKɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ Sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs ᴜɴᴛɪʟ 12 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ !</b>",
+                    text="<b>ʜᴇʏ ᴛʜᴇʀᴇ!!\n\nʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴅᴏɪɴɢ ɢʀᴇᴀᴛ! ᴛʜɪꜱ ᴡɪʟʟ ᴊᴜꜱᴛ ᴛᴀᴋᴇ 2 ᴍɪɴᴜᴛᴇꜱ ᴏꜰ ʏᴏᴜʀ ᴛɪᴍᴇ.\n\nᴛᴏ ᴋᴇᴇᴘ ᴏᴜʀ ꜱᴇʀᴠᴇʀꜱ ʀᴜɴɴɪɴɢ ꜱᴍᴏᴏᴛʜʟʏ ᴀɴᴅ ᴇɴʜᴀɴᴄᴇ ᴛʜᴇ ʙᴏᴛ’ꜱ ᴇꜰꜰɪᴄɪᴇɴᴄʏ, ᴡᴇ ʜᴀᴠᴇ ɪɴᴛʀᴏᴅᴜᴄᴇᴅ ᴀ ɴᴇᴡ <u>ᴛᴏᴋᴇɴ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ꜱʏꜱᴛᴇᴍ</u>.\n\nᴛʜɪꜱ ꜱʏꜱᴛᴇᴍ ᴇɴꜱᴜʀᴇꜱ ꜱᴍᴏᴏᴛʜ ᴀɴᴅ ᴜɴɪɴᴛᴇʀʀᴜᴘᴛᴇᴅ ꜱᴇʀᴠɪᴄᴇ, ʜᴇʟᴘɪɴɢ ᴜꜱ ᴍᴀɪɴᴛᴀɪɴ ᴛᴏᴘ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇ ᴀɴᴅ ᴅᴇʟɪᴠᴇʀ ᴛʜᴇ ʙᴇꜱᴛ ᴇxᴘᴇʀɪᴇɴᴄᴇ ᴡɪᴛʜ ᴍɪɴɪᴍᴀʟ ʙᴏᴛ ᴅᴏᴡɴᴛɪᴍᴇ!\n\nᴡᴇ ᴀᴘᴘʀᴇᴄɪᴀᴛᴇ ʏᴏᴜʀ ᴄᴏᴏᴘᴇʀᴀᴛɪᴏɴ ᴀɴᴅ ᴜɴᴅᴇʀꜱᴛᴀɴᴅɪɴɢ!\n\nᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴠᴇʀɪꜰʏ' ʙᴜᴛᴛᴏɴ ᴛᴏ ɪɴɪᴛɪᴀᴛᴇ ᴛʜᴇ ᴘʀᴏᴄᴇꜱꜱ.\n\nꜰᴏʀ ᴀꜱꜱɪꜱᴛᴀɴᴄᴇ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ' ʙᴜᴛᴛᴏɴ ꜰᴏʀ ᴀ ꜱᴛᴇᴘ-ʙʏ-ꜱᴛᴇᴘ ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴅᴀʏ.</b>",
                     protect_content=True if PROTECT_CONTENT else False,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -534,7 +534,7 @@ async def start(client, message):
             InlineKeyboardButton("💸 𝐑𝐞𝐦𝐨𝐯𝐞 𝐕𝐞𝐫𝐢𝐟𝐲 💸", callback_data='seeplans')
         ]]
         await message.reply_text(
-            text="<b>Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ!\nKɪɴᴅʟʏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ Sᴏ ᴛʜᴀᴛ ʏᴏᴜ ᴄᴀɴ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏᴠɪᴇs ᴜɴᴛɪʟ 12 ʜᴏᴜʀs ғʀᴏᴍ ɴᴏᴡ !</b>",
+            text="<b>ʜᴇʏ ᴛʜᴇʀᴇ!!\n\nʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴅᴏɪɴɢ ɢʀᴇᴀᴛ! ᴛʜɪꜱ ᴡɪʟʟ ᴊᴜꜱᴛ ᴛᴀᴋᴇ 2 ᴍɪɴᴜᴛᴇꜱ ᴏꜰ ʏᴏᴜʀ ᴛɪᴍᴇ.\n\nᴛᴏ ᴋᴇᴇᴘ ᴏᴜʀ ꜱᴇʀᴠᴇʀꜱ ʀᴜɴɴɪɴɢ ꜱᴍᴏᴏᴛʜʟʏ ᴀɴᴅ ᴇɴʜᴀɴᴄᴇ ᴛʜᴇ ʙᴏᴛ’ꜱ ᴇꜰꜰɪᴄɪᴇɴᴄʏ, ᴡᴇ ʜᴀᴠᴇ ɪɴᴛʀᴏᴅᴜᴄᴇᴅ ᴀ ɴᴇᴡ <u>ᴛᴏᴋᴇɴ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ꜱʏꜱᴛᴇᴍ</u>.\n\nᴛʜɪꜱ ꜱʏꜱᴛᴇᴍ ᴇɴꜱᴜʀᴇꜱ ꜱᴍᴏᴏᴛʜ ᴀɴᴅ ᴜɴɪɴᴛᴇʀʀᴜᴘᴛᴇᴅ ꜱᴇʀᴠɪᴄᴇ, ʜᴇʟᴘɪɴɢ ᴜꜱ ᴍᴀɪɴᴛᴀɪɴ ᴛᴏᴘ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇ ᴀɴᴅ ᴅᴇʟɪᴠᴇʀ ᴛʜᴇ ʙᴇꜱᴛ ᴇxᴘᴇʀɪᴇɴᴄᴇ ᴡɪᴛʜ ᴍɪɴɪᴍᴀʟ ʙᴏᴛ ᴅᴏᴡɴᴛɪᴍᴇ!\n\nᴡᴇ ᴀᴘᴘʀᴇᴄɪᴀᴛᴇ ʏᴏᴜʀ ᴄᴏᴏᴘᴇʀᴀᴛɪᴏɴ ᴀɴᴅ ᴜɴᴅᴇʀꜱᴛᴀɴᴅɪɴɢ!\n\nᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴠᴇʀɪꜰʏ' ʙᴜᴛᴛᴏɴ ᴛᴏ ɪɴɪᴛɪᴀᴛᴇ ᴛʜᴇ ᴘʀᴏᴄᴇꜱꜱ.\n\nꜰᴏʀ ᴀꜱꜱɪꜱᴛᴀɴᴄᴇ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ' ʙᴜᴛᴛᴏɴ ꜰᴏʀ ᴀ ꜱᴛᴇᴘ-ʙʏ-ꜱᴛᴇᴘ ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴅᴀʏ.</b>",
             protect_content=True if PROTECT_CONTENT else False,
             reply_markup=InlineKeyboardMarkup(btn)
         )
@@ -950,9 +950,9 @@ async def send_msg(bot, message):
             else:
                 success = False
             if success:
-                await message.reply_text(f"<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ sᴇɴᴅ ᴛᴏ {user.mention}.</b>")
+                await message.reply_text(f"<b>Yᴏᴜʀ ᴍᴇssᴀɢᴇ ʜᴀs ʙᴇᴇɴ sᴜᴄᴄᴇssғᴜʟʟʏ sᴇɴT ᴛᴏ {user.mention}.</b>")
             else:
-                await message.reply_text("<b>Tʜɪs ᴜsᴇʀ ᴅɪᴅɴ'ᴛ sᴛᴀʀᴛᴇᴅ ᴛʜɪs ʙᴏᴛ ʏᴇᴛ!</b>")
+                await message.reply_text("<b>Tʜɪs ᴜsᴇʀ ᴅɪᴅɴ'ᴛ sᴛᴀʀᴛ ᴛʜɪs ʙᴏᴛ ʏᴇᴛ!</b>")
         except Exception as e:
             await message.reply_text(f"<b>Eʀʀᴏʀ: {e}</b>")
     else:
@@ -1182,7 +1182,7 @@ async def removetutorial(bot, message):
 async def stop_button(bot, message):
     msg = await bot.send_message(text="<b><i>ʙᴏᴛ ɪꜱ ʀᴇꜱᴛᴀʀᴛɪɴɢ</i></b>", chat_id=message.chat.id)       
     await asyncio.sleep(3)
-    await msg.edit("<b><i><u>ʙᴏᴛ ɪꜱ ʀᴇꜱᴛᴀʀᴛᴇᴅ</u> ✅</i></b>")
+    await msg.edit("<b><i><u>ʙᴏᴛ HAS ʀᴇꜱᴛᴀʀᴛᴇᴅ</u> ✅</i></b>")
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @Client.on_message(filters.command("plans"))
