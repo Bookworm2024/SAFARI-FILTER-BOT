@@ -58,7 +58,7 @@ PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in envir
 #stream link shortner
 STREAM_SITE = (environ.get('STREAM_SITE', 'hypershort.com'))
 STREAM_API = (environ.get('STREAM_API', '28cb820c966371de4aff06fc22d6a8a0bcf62b2c'))
-STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/Hoghjhh'))
+STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/hagapadahaga'))
 STREAM_LINK_MODE = is_enabled((environ.get('STREAM_LINK_MODE', "False")), False)
 
 # Others
