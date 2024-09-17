@@ -62,23 +62,23 @@ async def stream_download(bot, query):
         await msg.reply_text(text=f"tg://openmessage?user_id={user_id}\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} LINK MODE ON",
             reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=non_download),
-                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴇᴍ 🖥️", url=non_online)]]))
-        await query.answer("𝐍𝐨𝐭𝐞:\n𝐓𝐡𝐞 𝐀𝐝𝐬-𝐅𝐫𝐞𝐞 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐔𝐬𝐞𝐫𝐬\n\n‼️Tᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇᴀᴋ ʙᴇʟᴏᴡ..!!!", show_alert=True)
+                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=non_online)]]))
+        await query.answer("𝐍𝐨𝐭𝐞:\n𝐓𝐡𝐞 𝐀𝐝𝐬-𝐅𝐫𝐞𝐞 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 are 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐔𝐬𝐞𝐫𝐬\n\n‼️Tᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇCᴋ ʙᴇʟᴏᴡ..!!!", show_alert=True)
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=non_download),
-                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴇᴍ 🖥️", url=non_online)
+                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=non_online)
                 ],[
                     InlineKeyboardButton('⁉️ Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ ⁉️', url=STREAMHTO)]]))
     else:
         await msg.reply_text(text=f"tg://openmessage?user_id={user_id}\n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} SHORT MODE OFF",
             reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=download),
-                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴇᴍ 🖥️", url=online)]]))
+                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=online)]]))
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup([[
                     InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=download),
-                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴇᴍ 🖥️", url=online)
+                    InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=online)
                 ],[
                     InlineKeyboardButton('⁉️ ᴄʟᴏsᴇ ⁉️', callback_data='close_data')]]))
                         
@@ -108,11 +108,11 @@ async def reply_stream(client, message):
     file_name = file_id.file_name.replace("_", " ").replace(".mp4", "").replace(".mkv", "").replace(".", " ")
     if user_id not in PREMIUM_USER and STREAM_LINK_MODE == True:  
         await message.reply_text(
-            text=f"<b>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !\n\n📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <a href={CHNL_LNK}>{file_name}</a>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ : {non_download}\n\n🖥WATCH  : {non_online}\n\n⚠️ Tʜᴇ ʟɪɴᴋ ᴡɪʟʟ ɴᴏᴛ ᴇxᴘɪʀᴇ ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ꜱᴇʀᴠᴇʀ ɪꜱ ᴄʜᴀɴɢᴇᴅ. 🔋\n\n𝐍𝐨𝐭𝐞:\n𝐓𝐡𝐞 𝐀𝐝𝐬-𝐅𝐫𝐞𝐞 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐔𝐬𝐞𝐫𝐬\n\n‼️Tᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇᴀᴋ ʙᴇʟᴏᴡ..!!!</b>",
+            text=f"<b>𝗬𝗼𝘂𝗿 𝗟𝗶𝗻𝗸 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 !\n\n📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <a href={CHNL_LNK}>{file_name}</a>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ : {non_download}\n\n🖥WATCH  : {non_online}\n\n⚠️ Tʜᴇ ʟɪɴᴋ ᴡɪʟʟ ɴᴏᴛ ᴇxᴘɪʀᴇ ᴜɴᴛɪʟ ᴛʜᴇ ʙᴏᴛ'ꜱ ꜱᴇʀᴠᴇʀ ɪꜱ ᴄʜᴀɴɢᴇᴅ. 🔋\n\n𝐍𝐨𝐭𝐞:\n𝐓𝐡𝐞 𝐀𝐝𝐬-𝐅𝐫𝐞𝐞 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 are 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐔𝐬𝐞𝐫𝐬\n\n‼️Tᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ, ᴄʜᴇCᴋ ʙᴇʟᴏᴡ..!!!</b>",
             reply_markup=InlineKeyboardMarkup(
                 [[
                   InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=non_download),
-                  InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴇᴍ 🖥️", url=non_online)
+                  InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=non_online)
                   ],[
                   InlineKeyboardButton('🔒 Hᴏᴡ Tᴏ Dᴏᴡɴʟᴏᴀᴅ 🔒', url=STREAMHTO)
                 ],[
@@ -126,7 +126,7 @@ async def reply_stream(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [[
                   InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=download),
-                  InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴇᴍ 🖥️", url=online)
+                  InlineKeyboardButton("🖥️ ꜱᴛʀᴇᴀᴍ 🖥️", url=online)
                 ]]),
                 disable_web_page_preview=True
         )
@@ -142,7 +142,7 @@ async def private_filter(client, message):
         user_id = message.from_user.id
         if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
         if user_id in ADMINS: return # ignore admins
-        await message.reply_text("<b>Yᴏᴜ ᴡᴏɴ'ᴛ ɢᴇᴛ ᴍᴏᴠɪᴇꜱ ʜᴇʀᴇ, ʏᴏᴜ'ʟʟ ʜᴀᴠᴇ ᴛᴏ ᴀꜱᴋ ғᴏʀ ᴛʜᴇᴍ ɪɴ ᴀ ɢʀᴏᴜᴘ. @bn_files_group</b>")
+        await message.reply_text("<b>ꜱᴏʀʀʏ, ɪ ᴅᴏ ɴᴏᴛ ᴘʀᴏᴠɪᴅᴇ ꜰɪʟᴇꜱ ᴅɪʀᴇᴄᴛʟʏ ɪɴ ᴘᴍ.\n\nᴛᴏ ɢᴇᴛ ꜰɪʟᴇꜱ, ʏᴏᴜ ᴍᴜꜱᴛ ᴊᴏɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ!\n\nʜᴇʀᴇ ɪꜱ ᴛʜᴇ ᴜꜱᴇʀɴᴀᴍᴇ ᴛᴏ ᴛʜᴇ ꜱᴀᴍᴇ: @movies_series_requestt</b>")
         await client.send_message(
             chat_id=LOG_CHANNEL,
             text=f"<b>#𝐏𝐌_𝐌𝐒𝐆\n\nNᴀᴍᴇ : {user}\n\nID : {user_id}\n\nMᴇssᴀɢᴇ : {content}</b>"
@@ -348,7 +348,7 @@ async def language_check(bot, query):
             ]
             btn.insert(0, [
                 InlineKeyboardButton("! Sᴇʟᴇᴄᴛ Aɢᴀɪɴ !", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
+                InlineKeyboardButton("Qᴜᴀʟɪᴛɪᴇꜱ", callback_data=f"lusi_films#{userid}"),
                 InlineKeyboardButton("Sᴇᴀꜱᴏɴꜱ", callback_data=f"safaridev#{userid}")
             ])
             btn.insert(0, [
@@ -358,7 +358,7 @@ async def language_check(bot, query):
             btn = []
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
+                InlineKeyboardButton("Qᴜᴀʟɪᴛɪᴇꜱ", callback_data=f"lusi_films#{userid}"),
                 InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"safaridev#{userid}")
             ])
             btn.insert(0, [
@@ -481,7 +481,7 @@ async def quality_check(bot, query):
             btn = []
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
+                InlineKeyboardButton("Qᴜᴀʟɪᴛɪᴇꜱ", callback_data=f"lusi_films#{userid}"),
                 InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"safaridev#{userid}")
             ])
             btn.insert(0, [
@@ -587,7 +587,7 @@ async def seasons_check(bot, query):
             ]
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
+                InlineKeyboardButton("Qᴜᴀʟɪᴛɪᴇꜱ", callback_data=f"lusi_films#{userid}"),
                 InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"safaridev#{userid}")
             ])
             btn.insert(0, [
@@ -597,7 +597,7 @@ async def seasons_check(bot, query):
             btn = []
             btn.insert(0, [
                 InlineKeyboardButton("Lᴀɴɢᴜᴀɢᴇ", callback_data=f"select_lang#{userid}"),
-                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ", callback_data=f"lusi_films#{userid}"),
+                InlineKeyboardButton("Qᴜᴀʟɪᴛɪᴇꜱ", callback_data=f"lusi_films#{userid}"),
                 InlineKeyboardButton("Sᴇʟᴇᴄᴛ Aɢᴀɪɴ", callback_data=f"safaridev#{userid}")
             ])
             btn.insert(0, [
@@ -994,7 +994,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton("Vᴇʀɪғʏ", url=await get_token(client, query.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id)),
                             InlineKeyboardButton("Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=HOW_TO_VERIFY)
                             ],[
-                            InlineKeyboardButton("💸 𝐑𝐞𝐦𝐨𝐯𝐞 𝐕𝐞𝐫𝐢𝐟𝐲 💸", callback_data='seeplans')
+                            InlineKeyboardButton("💸 ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ! 💸", callback_data='seeplans')
                         ]]
                         await client.send_message(
                             chat_id=query.from_user.id,
@@ -1004,7 +1004,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             parse_mode=enums.ParseMode.HTML,
                             reply_markup=InlineKeyboardMarkup(btn)
                         )
-                        return await query.answer("Hᴇʏ, Yᴏᴜ ʜᴀᴠᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ. Yᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ. Cʜᴇᴄᴋ ᴍʏ PM ᴛᴏ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ғɪʟᴇs !", show_alert=True)
+                        return await query.answer("ʜᴇʏ ᴛʜᴇʀᴇ!!\n\nʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴅᴏɪɴɢ ɢʀᴇᴀᴛ! ᴛʜɪꜱ ᴡɪʟʟ ᴊᴜꜱᴛ ᴛᴀᴋᴇ 2 ᴍɪɴᴜᴛᴇꜱ ᴏꜰ ʏᴏᴜʀ ᴛɪᴍᴇ.\n\nᴛᴏ ᴋᴇᴇᴘ ᴏᴜʀ ꜱᴇʀᴠᴇʀꜱ ʀᴜɴɴɪɴɢ ꜱᴍᴏᴏᴛʜʟʏ ᴀɴᴅ ᴇɴʜᴀɴᴄᴇ ᴛʜᴇ ʙᴏᴛ’ꜱ ᴇꜰꜰɪᴄɪᴇɴᴄʏ, ᴡᴇ ʜᴀᴠᴇ ɪɴᴛʀᴏᴅᴜᴄᴇᴅ ᴀ ɴᴇᴡ <u>ᴛᴏᴋᴇɴ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ꜱʏꜱᴛᴇᴍ</u>.\n\nᴛʜɪꜱ ꜱʏꜱᴛᴇᴍ ᴇɴꜱᴜʀᴇꜱ ꜱᴍᴏᴏᴛʜ ᴀɴᴅ ᴜɴɪɴᴛᴇʀʀᴜᴘᴛᴇᴅ ꜱᴇʀᴠɪᴄᴇ, ʜᴇʟᴘɪɴɢ ᴜꜱ ᴍᴀɪɴᴛᴀɪɴ ᴛᴏᴘ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇ ᴀɴᴅ ᴅᴇʟɪᴠᴇʀ ᴛʜᴇ ʙᴇꜱᴛ ᴇxᴘᴇʀɪᴇɴᴄᴇ ᴡɪᴛʜ ᴍɪɴɪᴍᴀʟ ʙᴏᴛ ᴅᴏᴡɴᴛɪᴍᴇ!\n\nᴡᴇ ᴀᴘᴘʀᴇᴄɪᴀᴛᴇ ʏᴏᴜʀ ᴄᴏᴏᴘᴇʀᴀᴛɪᴏɴ ᴀɴᴅ ᴜɴᴅᴇʀꜱᴛᴀɴᴅɪɴɢ!\n\nᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴠᴇʀɪꜰʏ' ʙᴜᴛᴛᴏɴ ᴛᴏ ɪɴɪᴛɪᴀᴛᴇ ᴛʜᴇ ᴘʀᴏᴄᴇꜱꜱ.\n\nꜰᴏʀ ᴀꜱꜱɪꜱᴛᴀɴᴄᴇ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ' ʙᴜᴛᴛᴏɴ ꜰᴏʀ ᴀ ꜱᴛᴇᴘ-ʙʏ-ꜱᴛᴇᴘ ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴅᴀʏ.", show_alert=True)
                     else:
                         await client.send_cached_media(
                             chat_id=query.from_user.id,
@@ -1048,7 +1048,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=allfiles_{key}")
                 return
         except UserIsBlocked:
-            await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀʜɴ !', show_alert=True)
+            await query.answer('Uɴʙʟᴏᴄᴋ ᴛʜᴇ ʙᴏᴛ ᴍᴀɴ !', show_alert=True)
         except PeerIdInvalid:
             await query.answer(url=f"https://telegram.me/{temp.U_NAME}?start=sendfiles3_{key}")
         except Exception as e:
@@ -1058,7 +1058,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ᴍᴀʜɴ! 😒", show_alert=True)
+            await query.answer("Jᴏɪɴ ᴏᴜʀ Bᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ ᴍᴀɴ! 😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         if file_id == "send_all":
@@ -1069,7 +1069,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             elif is_over == 'fsub':
                 return await query.answer("Hᴇʏ, Yᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴊᴏɪɴᴇᴅ ɪɴ ᴍʏ ʙᴀᴄᴋ ᴜᴘ ᴄʜᴀɴɴᴇʟ. Cʜᴇᴄᴋ ᴍʏ PM ᴛᴏ ᴊᴏɪɴ ᴀɴᴅ ɢᴇᴛ ғɪʟᴇs !", show_alert=True)
             elif is_over == 'verify':
-                return await query.answer("Hᴇʏ, Yᴏᴜ ʜᴀᴠᴇ ɴᴏᴛ ᴠᴇʀɪғɪᴇᴅ ᴛᴏᴅᴀʏ. Yᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴠᴇʀɪғʏ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ. Cʜᴇᴄᴋ ᴍʏ PM ᴛᴏ ᴠᴇʀɪғʏ ᴀɴᴅ ɢᴇᴛ ғɪʟᴇs !", show_alert=True)
+                return await query.answer("ʜᴇʏ ᴛʜᴇʀᴇ!!\n\nʜᴏᴘᴇ ʏᴏᴜ ᴀʀᴇ ᴅᴏɪɴɢ ɢʀᴇᴀᴛ! ᴛʜɪꜱ ᴡɪʟʟ ᴊᴜꜱᴛ ᴛᴀᴋᴇ 2 ᴍɪɴᴜᴛᴇꜱ ᴏꜰ ʏᴏᴜʀ ᴛɪᴍᴇ.\n\nᴛᴏ ᴋᴇᴇᴘ ᴏᴜʀ ꜱᴇʀᴠᴇʀꜱ ʀᴜɴɴɪɴɢ ꜱᴍᴏᴏᴛʜʟʏ ᴀɴᴅ ᴇɴʜᴀɴᴄᴇ ᴛʜᴇ ʙᴏᴛ’ꜱ ᴇꜰꜰɪᴄɪᴇɴᴄʏ, ᴡᴇ ʜᴀᴠᴇ ɪɴᴛʀᴏᴅᴜᴄᴇᴅ ᴀ ɴᴇᴡ <u>ᴛᴏᴋᴇɴ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ ꜱʏꜱᴛᴇᴍ</u>.\n\nᴛʜɪꜱ ꜱʏꜱᴛᴇᴍ ᴇɴꜱᴜʀᴇꜱ ꜱᴍᴏᴏᴛʜ ᴀɴᴅ ᴜɴɪɴᴛᴇʀʀᴜᴘᴛᴇᴅ ꜱᴇʀᴠɪᴄᴇ, ʜᴇʟᴘɪɴɢ ᴜꜱ ᴍᴀɪɴᴛᴀɪɴ ᴛᴏᴘ ᴘᴇʀꜰᴏʀᴍᴀɴᴄᴇ ᴀɴᴅ ᴅᴇʟɪᴠᴇʀ ᴛʜᴇ ʙᴇꜱᴛ ᴇxᴘᴇʀɪᴇɴᴄᴇ ᴡɪᴛʜ ᴍɪɴɪᴍᴀʟ ʙᴏᴛ ᴅᴏᴡɴᴛɪᴍᴇ!\n\nᴡᴇ ᴀᴘᴘʀᴇᴄɪᴀᴛᴇ ʏᴏᴜʀ ᴄᴏᴏᴘᴇʀᴀᴛɪᴏɴ ᴀɴᴅ ᴜɴᴅᴇʀꜱᴛᴀɴᴅɪɴɢ!\n\nᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ᴠᴇʀɪꜰʏ' ʙᴜᴛᴛᴏɴ ᴛᴏ ɪɴɪᴛɪᴀᴛᴇ ᴛʜᴇ ᴘʀᴏᴄᴇꜱꜱ.\n\nꜰᴏʀ ᴀꜱꜱɪꜱᴛᴀɴᴄᴇ, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ 'ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ' ʙᴜᴛᴛᴏɴ ꜰᴏʀ ᴀ ꜱᴛᴇᴘ-ʙʏ-ꜱᴛᴇᴘ ᴛᴜᴛᴏʀɪᴀʟ ᴏɴ ʜᴏᴡ ᴛᴏ ɢᴇᴛ ᴠᴇʀɪꜰɪᴇᴅ ꜰᴏʀ ᴛʜᴇ ᴅᴀʏ.", show_alert=True)
             else:
                 return await query.answer(f"Eʀʀᴏʀ: {is_over}", show_alert=True)
         files_ = await get_file_details(file_id)
@@ -1095,7 +1095,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 InlineKeyboardButton("Vᴇʀɪғʏ", url=await get_token(client, query.from_user.id, f"https://telegram.me/{temp.U_NAME}?start=", file_id)),
                 InlineKeyboardButton("Hᴏᴡ Tᴏ Vᴇʀɪғʏ", url=HOW_TO_VERIFY)
                 ],[
-                InlineKeyboardButton("💸 𝐑𝐞𝐦𝐨𝐯𝐞 𝐕𝐞𝐫𝐢𝐟𝐲 💸", callback_data='seeplans')
+                InlineKeyboardButton("💸 ʀᴇᴍᴏᴠᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ! 💸", callback_data='seeplans')
             ]]
             await client.send_message(
                 chat_id=query.from_user.id,
@@ -1338,13 +1338,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour        
         if curr_time < 12:
-            gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 👋" 
         elif curr_time < 17:
-            gtxt = "ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ 👋" 
         elif curr_time < 21:
-            gtxt = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀ ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ 👋"
         else:
-            gtxt = "ɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
+            gtxt = "ᴡɪꜱʜ ʏᴏᴜ ᴀɢᴏᴏᴅ ɴɪɢʜᴛ 👋"
         await client.edit_message_media(
             query.message.chat.id, 
             query.message.id, 
@@ -1451,7 +1451,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "premium_info":
         user_id = user_id = query.from_user.id
         if user_id in PREMIUM_USER:
-            await query.answer("ʏᴏᴜ ᴀʟʀᴇᴀᴅʏ ʜᴀᴠᴇ ᴀ ᴘʟᴀɴ ғʀɪᴇɴᴅ 🙂\n\nᴡᴀɪᴛ ғᴏʀ ʏᴏᴜʀ  ᴘʟᴀɴ ᴛᴏ ᴇɴᴅ, ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ʙᴜʏ ᴀ ɴᴇᴡ ᴘʟᴀɴ", show_alert=True)      
+            await query.answer("ʏᴏᴜ ᴀʟʀᴇᴀᴅʏ ʜᴀᴠᴇ ᴀ ᴘʟᴀɴ ғʀɪᴇɴᴅ 🙂\n\nᴡᴀɪᴛ ғᴏʀ ʏᴏᴜʀ  ᴘʟᴀɴ ᴛᴏ ᴇxᴘɪʀᴇ, ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ʙᴜʏ ᴀ ɴᴇᴡ ᴘʟᴀɴ", show_alert=True)      
             return 
         else:
             buttons = [[
@@ -1977,7 +1977,7 @@ async def auto_filter(client, msg, spoll=False):
                 return
             if len(message.text) < 100:
                 search = message.text
-                m=await message.reply_sticker(sticker="CAACAgIAAxkBAAEVugJljpdfkszexOUZu8hPjuPKty8ZmAACdxgAAqPjKEmMVSFmXGLogR4E",
+                m=await message.reply_sticker(sticker="CAACAgIAAxkBAAJ4L2bpH96owEmpgDJ7N8o2kTvNfpzxAAKKOwACzURoSpOdH6cxMTITNgQ",
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🅿︎🅻︎🅴︎🅰︎🆂︎🅴︎  🆆︎🅰︎🅸︎🆃︎", url=CHNL_LNK)]]))
                 search = search.lower()
                 find = search.split(" ")
@@ -2017,7 +2017,7 @@ async def auto_filter(client, msg, spoll=False):
         else:
             message = msg.message.reply_to_message  # msg will be callback query
             search, files, offset, total_results = spoll
-            m=await message.reply_sticker(sticker="CAACAgIAAxkBAAEVugJljpdfkszexOUZu8hPjuPKty8ZmAACdxgAAqPjKEmMVSFmXGLogR4E",
+            m=await message.reply_sticker(sticker="CAACAgIAAxkBAAJ4L2bpH96owEmpgDJ7N8o2kTvNfpzxAAKKOwACzURoSpOdH6cxMTITNgQ",
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🅿︎🅻︎🅴︎🅰︎🆂︎🅴︎  🆆︎🅰︎🅸︎🆃︎", url=CHNL_LNK)]]))
             settings = await get_settings(message.chat.id)
         key = f"{message.chat.id}-{message.id}"
